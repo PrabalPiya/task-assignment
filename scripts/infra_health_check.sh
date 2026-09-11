@@ -14,7 +14,10 @@ log="/var/log/infra_health.log"
 
 disk=$(df --output=pcent / | tail -n 1 | tr -d ' %')
 
-if [ "$disk" -gt 85 ]; then
+if [ -z "$disk" ]; then
+    echo "$time [WARNING] Could not read disk usage." | tee -a "$log"
+    exit 1
+else [ "$disk" -gt 85 ]; then
     echo "$time [WARNING] Disk usage is above 85%." | tee -a "$log"
 fi
 
