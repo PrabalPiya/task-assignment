@@ -1,0 +1,3 @@
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+* * * * * root /opt/scripts/collect_metrics.sh > /var/log/infra_metrics_cron.log 2>&1
+
