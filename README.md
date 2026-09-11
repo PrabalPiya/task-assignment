@@ -432,4 +432,4 @@ If EC2 instance is also to be deleted:
 5. Delete security groups
 6. Delete the VPC
 
-[ Note: I used AI to help troubleshoot errors and understand unfamiliar steps, including cron jobs, a custom metrics endpoint through Nginx, and parts of the Bash scripts. ]
+[ Note: I used AI to help troubleshoot errors and understand unfamiliar steps, including cron jobs, a custom metrics endpoint through Nginx, backup and restore testing and parts of the Bash scripts. ]
