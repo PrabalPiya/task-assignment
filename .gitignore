@@ -6,4 +6,5 @@ __pycache__/
 .venv/
 backups/
 *.sql.gz
-
+node_modules/
+npm-debug.log*
